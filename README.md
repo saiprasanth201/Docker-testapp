@@ -1,5 +1,4 @@
-# docker-testapp
-# 🚀 Dockerized Node.js + MongoDB App
+# Docker-testapp
 
 ## 📌 Overview
 
