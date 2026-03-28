@@ -35,7 +35,7 @@ It demonstrates how to build, run, and manage multi-container applications using
 git clone <your-repo-link>
 cd <repo-name>
 ```
-https://hub.docker.com/repositories/saiprasanth201
+Docker Hub -> https://hub.docker.com/repositories/saiprasanth201
 
 ### 2. Run the application
 
