@@ -35,8 +35,12 @@ It demonstrates how to build, run, and manage multi-container applications using
 git clone <your-repo-link>
 cd <repo-name>
 ```
+https://hub.docker.com/repositories/saiprasanth201
 
 ### 2. Run the application
+
+docker pull saiprasanth201/testapp
+docker run -p 5050:5050 saiprasanth201/testapp
 
 ```bash
 docker compose -f mongodb.yaml up -d
