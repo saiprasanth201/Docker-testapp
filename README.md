@@ -39,10 +39,10 @@ https://hub.docker.com/repositories/saiprasanth201
 
 ### 2. Run the application
 
-docker pull saiprasanth201/testapp
-docker run -p 5050:5050 saiprasanth201/testapp
 
 ```bash
+docker pull saiprasanth201/testapp
+docker run -p 5050:5050 saiprasanth201/testapp
 docker compose -f mongodb.yaml up -d
 ```
 
