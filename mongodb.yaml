@@ -1,0 +1,33 @@
+
+services:
+ mongodb:
+  image: mongo
+  ports:
+   - 27017:27017
+  environment:
+    MONGO_INITDB_ROOT_USERNAME: root
+    MONGO_INITDB_ROOT_PASSWORD: qwerty
+  volumes:
+    - mongo-data:/data/db
+
+
+ mongo-express:
+   depends_on:
+    - mongodb
+   image: mongo-express
+   ports:
+    - 8081:8081
+   environment:
+    ME_CONFIG_MONGODB_ADMINUSERNAME: root
+    ME_CONFIG_MONGODB_ADMINPASSWORD: qwerty
+    ME_CONFIG_MONGODB_URL: mongodb://root:qwerty@mongodb:27017/
+
+ backend:
+  image: testapp:latest 
+  ports:
+    - "5050:5050"
+  depends_on:
+    - mongodb   
+
+volumes:
+  mongo-data:
